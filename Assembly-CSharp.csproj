@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{9EFA8A0D-0D37-1159-8A61-59D34E9DF556}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_6;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_ANDROID;ENABLE_GENERICS;ENABLE_TERRAIN;ENABLE_WEBCAM;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>U:/P_Apps/UnityEditor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>U:/P_Apps/UnityEditor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Game Scripts\AnimatedFeatures.cs" />
+     <Compile Include="Assets\Game Scripts\Butt.cs" />
+     <Compile Include="Assets\Game Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Game Scripts\CartControl.cs" />
+     <Compile Include="Assets\Game Scripts\Collectable.cs" />
+     <Compile Include="Assets\Game Scripts\Damager.cs" />
+     <Compile Include="Assets\Game Scripts\DeathTimer.cs" />
+     <Compile Include="Assets\Game Scripts\FlameTrigger.cs" />
+     <Compile Include="Assets\Game Scripts\Flamethrower.cs" />
+     <Compile Include="Assets\Game Scripts\HUD.cs" />
+     <Compile Include="Assets\Game Scripts\Hobo.cs" />
+     <Compile Include="Assets\Game Scripts\IObserver.cs" />
+     <Compile Include="Assets\Game Scripts\Inventory.cs" />
+     <Compile Include="Assets\Game Scripts\PlayerCar.cs" />
+     <Compile Include="Assets\Game Scripts\Smokie.cs" />
+     <Compile Include="Assets\Game Scripts\Spoons.cs" />
+     <Compile Include="Assets\Game Scripts\raycastdemo_981.cs" />
+     <Compile Include="Assets\Other Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\CR_Drag.cs" />
+     <Compile Include="Assets\Scripts\CR_Snap.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{0EBB6CAA-437A-12A7-FC86-93FAA52FC99A}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
